@@ -1,76 +1,120 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Rudra | Portfolio</title>
 
-  <link rel="stylesheet" href="sstyle.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
+  <!-- GLOW EFFECTS -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
   <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <h1 class="logo">Rudra</h1>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <header class="navbar">
+
+    <div class="logo">
+      Rudra R. Shinde
+    </div>
+
+    <nav>
+
+      <ul class="nav-links">
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
     </nav>
+
+    <div class="nav-right">
+
+      <button id="theme-toggle">
+        ☀
+      </button>
+
+      <a href="#contact" class="contact-btn">
+        Let's Talk
+      </a>
+
+    </div>
+
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow">Hello, I'm</p>
-          <h2>Rudra Shinde</h2>
-          <p class="hero-subtitle">Developer, learner, and problem solver crafting clean apps and polished experiences.</p>
-          <a href="#projects" class="btn">See Work</a>
-        </div>
-        <div class="hero-photo">
-          <img src="profile.jpg" alt="Rudra profile" />
-        </div>
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+
+      <div class="availability">
+        ● Available for opportunities
       </div>
-    </section>
+
+      <h1>
+        Hello,
+      </h1>
+
+      <h2>
+        I'm<br>
+        RUDRA
+      </h2>
+
+    </div>
+
+    <!-- CENTER IMAGE -->
+    <div class="hero-center">
+
+      <img src="profile.jpg" alt="Rudra">
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-left">
+
+      <p>
+        Specialized in modern websites, frontend experiences, Java applications, and responsive UI/UX design.
+        I'm passionate about crafting clean, user-friendly digital products that combine aesthetics with functionality.
+      </p>
+
+    </div>
+
+  </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
 
-    <h2 class="section-title">About Me</h2>
+    <div class="section-top">
 
-    <div class="about-grid">
+      <span>About Me</span>
 
-      <div class="about-card">
-        <h3>Who Am I?</h3>
+    </div>
 
-        <p>
-          I'm an becomming developer passionate about Java, web development, and entrepreneurship.
-          I enjoy building practical software projects and improving my problem-solving skills.
-        </p>
-      </div>
+    <div class="about-content">
 
-      <div class="about-card">
-        <h3>Skills</h3>
+      <h3>
+        I build clean, modern, and visually polished digital experiences with a strong focus on simplicity and usability.
+      </h3>
 
-        <ul>
-          <li>HTML & CSS</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>Git & GitHub</li>
-          <li>Problem Solving</li>
-        </ul>
-      </div>
+      <p>
+        Passionate about web development, Java applications, and entrepreneurship. I enjoy turning ideas into practical products with premium UI and smooth user experiences.
+      </p>
 
     </div>
 
@@ -79,32 +123,48 @@
   <!-- PROJECTS -->
   <section class="projects" id="projects">
 
-    <h2 class="section-title">Highlighted Work</h2>
+    <div class="section-top">
+
+      <span>Selected Work</span>
+
+    </div>
 
     <div class="project-grid">
 
       <div class="project-card">
-        <h3>ATM System</h3>
+
+        <span>01</span>
+
+        <h4>ATM Management System</h4>
 
         <p>
-          Java-based ATM management system with login, balance checking, and transactions.
+          Java desktop banking application with authentication and transaction system.
         </p>
+
       </div>
 
       <div class="project-card">
-        <h3>Music Player</h3>
+
+        <span>02</span>
+
+        <h4>Music Player</h4>
 
         <p>
-          Desktop music player application created using Java and GUI.
+          Desktop media player application with playlist and playback controls.
         </p>
+
       </div>
 
       <div class="project-card">
-        <h3>Portfolio Website</h3>
+
+        <span>03</span>
+
+        <h4>Portfolio Website</h4>
 
         <p>
-          Responsive personal portfolio website using HTML and CSS.
+          Luxury inspired responsive portfolio with dark/light mode and editorial design.
         </p>
+
       </div>
 
     </div>
@@ -114,29 +174,30 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
 
-    <h2 class="section-title">Connect</h2>
+    <h3>
+      Let’s create something meaningful together.
+    </h3>
 
-    <div class="social-grid">
-      <a class="social-card" href="https://www.linkedin.com/in/rudra-ramdas-shinde" target="_blank" rel="noreferrer noopener" aria-label="Open LinkedIn profile">
-        <h3>LinkedIn</h3>
-        <p>Rudra Ramdas Shinde</p>
+    <div class="contact-links">
+
+      <a href="mailto:rudrashinde.tech@gmail.com">
+        rudrashinde.tech@gmail.com
       </a>
-      <a class="social-card" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#drafts?compose=new" aria-label="Send email to rudrashinde.tech@gmail.com">
-        <h3>Email</h3>
-        <p>rudrashinde.tech@gmail.com</p>
+
+      <a href="https://github.com/rudrarshinde-dev" target="_blank">
+        GitHub
       </a>
-      <a class="social-card" href="https://github.com/rudrarshinde-dev" target="_blank" rel="noreferrer noopener" aria-label="Open GitHub profile">
-        <h3>GitHub</h3>
-        <p>@rudrarshinde-dev</p>
+
+      <a href="https://www.linkedin.com/in/rudra-ramdas-shinde" target="_blank">
+        LinkedIn
       </a>
+
     </div>
-  </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Rudra</p>
-  </footer>
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
 
 </body>
 </html>
